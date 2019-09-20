@@ -69,9 +69,9 @@
         } else {
             axios.get(this.$loginPath + '?userpwd=' + this.password+'&useremail='+this.email)
             .then(response => {
-                console.log(response);
+                
                 if(response.data.status) {
-                    console.log(response.data.message);
+                    
                     let online = true;
                     let userDetails = {
                     username: this.email,
@@ -81,7 +81,11 @@
                 localStorage.setItem("userDetails", userDetails);
                 window.location.reload();
                 } else {
-                    console.log(response.data.message);
+                    this.$toastr('add', {
+                    msg: "Unable to login",
+                    timeout: 5000,
+                    type: 'error',
+                    });
                 }
             })
             

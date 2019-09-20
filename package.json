@@ -2,7 +2,7 @@
   "name": "vue-news-app",
   "version": "1.0.0",
   "description": "News Application with Vue.js And Vuetify",
-  "author": "Rachid Sakara <rachidsakaraoo7@gmail.com>",
+  "author": "Ayodele Olufemi <feminiscence@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
